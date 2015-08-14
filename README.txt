@@ -1,3 +1,17 @@
+This version has has some defaults slightly altered:
+  * this patch has been applied to update the base box from precise32 to trusty64.
+    https://www.drupal.org/node/2327263
+    a lot of the dependencies have been updated with it.
+
+  * postgreSQL is now installed by default. dependencies are also included.
+
+  * postgreSQL version has been upped from 9.1 to 9.3
+
+  * the VM memory has been increased from 1024 to 2048
+
+  * the shared folder has been defaulted to use nfs.
+
+
 Vagrant Drupal Development
 --------------------------
 
