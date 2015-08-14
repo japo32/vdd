@@ -8,7 +8,13 @@
       "server_debian_password": "root"
     }
   },
-  "override_attributes": {},
+  "override_attributes": {
+    "postgresql": {
+      "password": {
+        "postgres": "random"
+      }
+    }
+  },
   "json_class": "Chef::Role",
   "run_list": [
     "recipe[apt]",
@@ -36,7 +42,15 @@
     "recipe[vdd::vim]",
     "recipe[vdd::patchutils]",
     "recipe[vdd::siege]",
-    "recipe[vdd_example]"
+    "recipe[vdd_example]",
+    "recipe[openssl]",
+    "recipe[database]",
+    "recipe[database::postgresql]",
+    "recipe[build-essential]",
+    "recipe[postgresql::server]",
+    "recipe[postgresql::client]",
+    "recipe[xfs]",
+    "recipe[aws]"
   ],
   "description": "Installs Drupal development environment.",
   "chef_type": "role"
