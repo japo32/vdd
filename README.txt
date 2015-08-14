@@ -11,6 +11,11 @@ This version has has some defaults slightly altered:
 
   * the shared folder has been defaulted to use nfs.
 
+NOTE: This does NOT install drupal instances. It only allocates folders and prepares the databases according to what's in config.json.
+
+NOTE2: As this is a fork of the original vdd https://www.drupal.org/project/vdd, this will get outdated in the future when VDD gets updated.
+
+
 
 Vagrant Drupal Development
 --------------------------
